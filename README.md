@@ -1,2 +1,2 @@
-This is uzbek version of word. 
-i'll try to write english version soon
+# Guess the word
+This is simple guess the word game in uzbek
