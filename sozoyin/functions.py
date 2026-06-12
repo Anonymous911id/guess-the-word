@@ -21,21 +21,21 @@ def play():
     word = get_word()
     word_letters = set(word)
     user_letters = ''
-    print(f"Men {len(word)} xonali so'z o'yladim")
+    print(f"I thought of{len(word)} digit word")
 
     while len(word_letters) > 0:
         print(display(user_letters, word))  
         if len(user_letters) > 0:
-            print(f"Shu vaqtgacha kiritgan harflaringiz: {user_letters}")
+            print(f"The letters you have entered until now: {user_letters}")
 
-        letter = input("Harf kiriting: ").upper()
+        letter = input("Enter a letter: ").upper()
         if letter in user_letters:
-            print("Bu harfni avval kiritgansiz. Boshqa harf kiriting")
+            print("You have already entered this letter. Enter another letter.")
             continue
         elif letter in word:
             word_letters.remove(letter)
-            print(f"{letter} harfi to'g'ri")
+            print(f"The letter {letter} is correct")
         else:
-            print("Bunday harf yo'q")
+            print("There is no such letter")
         user_letters += letter
-    print(f"Tabriklayman! {word} so'zini {len(user_letters)} ta urinishda topdingiz")
+    print(f"Congratulations! you have found the word '{word}' in {len(user_letters)} tries")
