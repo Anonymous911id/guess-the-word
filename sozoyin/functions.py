@@ -21,7 +21,7 @@ def play():
     word = get_word()
     word_letters = set(word)
     user_letters = ''
-    print(f"I thought of{len(word)} digit word")
+    print(f"I thought of {len(word)} digit word")
 
     while len(word_letters) > 0:
         print(display(user_letters, word))  
