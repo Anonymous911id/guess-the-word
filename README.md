@@ -1,2 +1,10 @@
 # Guess the word
-This is simple guess the word game in uzbek
+A simple word guessing game
+## Features
+-Random word selection
+-Letter-by-letter guessing
+-Display guessed letters
+-Counts total attempts
+## To run it
+*Open the folder with cmd
+*Type `python main.py`

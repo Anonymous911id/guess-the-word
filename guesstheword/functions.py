@@ -4,8 +4,8 @@ from wordslist import words
 def get_word():
     word = random.choice(words)
     # if '-' or ' ' between words, the code below is also needed
-    # while '-' in word or ' ' in word:
-        # word = random.choice(words)
+    while '-' in word or ' ' in word:
+        word = random.choice(words)
     return word.upper()
 
 def display(user_letters, word):
